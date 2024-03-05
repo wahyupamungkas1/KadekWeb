@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bookshelf Apps - Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="head_bar">
+    <h1 class="head_bar__title">Bookshelf Apps - Sederhana</h1>
+</header>
+
+<main>
+    <div class="utama pertama">
+        <section class="input_section" id="myDIV">
+            <h3>Tambah Buku</h3>
+            <form id="inputBook">
+                <div class="input">
+                    <label for="inputBookTitle">Judul</label>
+                    <input id="inputBookTitle" type="text" placeholder="Masukkan judul buku disini ..." required>
+                </div>
+                <div class="input">
+                    <label for="inputBookAuthor">Penulis</label>
+                    <input id="inputBookAuthor" type="text" placeholder="Siapa nama penulis bukunya?" required>
+                </div>
+                <div class="input">
+                    <label for="inputBookYear">Tahun</label>
+                    <input id="inputBookYear" type="number" min="2000" max="2021" step="1" name="year" placeholder="Tahun berapa diterbitkan?" required>
+                    
+                </div>
+                <div class="input">
+                    <label for="inputStatus">Apakah bukunya sudah selsai dibaca?</label>
+                    <select class="input" id="check">
+                        <option value="true">Selesai</option>
+                        <option value="false">Belum</option>
+                    </select>
+                </div>
+                <button id="bookSubmit" type="submit">SAVE</button>
+            </form>
+        </section>
+
+        <section class="search_section" id="myDIV">
+            <h3>Pencarian</h3>
+            <form id="searchBook">
+                <label for="searchBookTitle">Judul</label>
+                <input id="searchBookTitle" type="text">
+                <button id="searchSubmit" type="submit">Cari</button>
+            </form>
+        </section>
+    </div>
+
+    <div class="utama kedua">
+        <div class="container">
+            <section class="book_shelf satu" id="rak1">
+                <h2>RAK 1</h2>
+                <h2>Belum selesai dibaca</h2>
+
+                <div id="unCompletedList" class="book_list">
+                            <!-- <article class="book_item">
+                                <h3>Book Title</h3>
+                                <p>Penulis: John Doe</p>
+                                <h5>Tahun: 2002</h5>
+
+                                <div class="action">
+                                    <button class="green">Completed</button>
+                                    <button class="red">Hapus buku</button>
+                                </div>
+                            </article> -->
+                </div>
+            </section>
+
+            <section class="book_shelf dua" id="rak2">
+                <h2>RAK 2</h2>
+                <marquee><h2>Sudah Selesai dibaca</h2></marquee>
+
+                <div id="isCompletedList" class="book_list">
+                            <!-- <article class="book_item">
+                                <h3>Book Title</h3>
+                                <p>Penulis: Doe</p>
+                                <h5>Tahun: 2002</h5>
+
+                                <div class="action">
+                                    <button class="green">Uncompleted</button>
+                                    <button class="red">Hapus buku</button>
+                                </div>
+                                </article> -->
+                </div>
+            </section>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="content-footer">
+        <marquee><h3>SUBMISSION KELAS BELAJAR MEMBUAT FRONT-END WEB UNTUK PEMULA</h3></marquee>
+    </div>
+</footer>
+
+
+<script src="main1.js"></script>
+<script src="main2.js"></script>
+<script src="main3.js"></script>
+<script src="main4.js"></script>
+</body>
+</html>
